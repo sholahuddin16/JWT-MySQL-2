@@ -1,0 +1,28 @@
+GET  http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNdWhhbW1hZCBTaG9sYWh1ZGRpbiIsImVtYWlsIjoibXNob2xhaHVkZGluQGdtYWlsLmNvbSIsImlhdCI6MTY0NjQ5OTk3MiwiZXhwIjoxNjQ2NDk5OTg3fQ.adHLNA3KEK6UGL8JlChEaA-y-eB4KEf1D6aa82SuoWg
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "msholahuddin@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Admin admin",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
